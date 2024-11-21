@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zomato Clone</h1>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <h2>Food Items</h2>
+            <div class="product" data-price="250 INR">
+                <img src="https://b.zmtcdn.com/data/pictures/5/18808035/af10ff67f9269218e788fb8c91d7d45f.jpg" alt="Food Item 1" width="800" height="600">
+                <h3>Food Item 1</h3>
+                <p>250 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-price="150 INR">
+                <img src="https://static.vecteezy.com/system/resources/previews/033/734/715/non_2x/spaghetti-with-tomato-sauce-and-mushrooms-on-a-plate-ai-generated-free-photo.jpg" alt="Food Item 2"  width="800" height="600">
+                <h3>Food Item 2</h3>
+                <p>150 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-price="250 INR">
+                <img src="https://www.newsx.com/wp-content/uploads/2024/08/WEBSITE-ASHISH-7-1.png" alt="Food Item 3"  width="800" height="600">
+                <h3>Food Item 3</h3>
+                <p>250 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            
+            <div class="product" data-price="300 INR">
+                <img src="https://images.indianexpress.com/2020/04/momos-759.jpg?w=414" alt="Food Item 4"  width="800" height="600">
+                <h3>Food Item 4</h3>
+                <p>300 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            
+            <div class="product" data-price="250 INR">
+                <img src="https://b.zmtcdn.com/data/dish_photos/4f0/8a30280fbfd1033030f7213c2ee494f0.png" alt="Food Item 5"  width="800" height="600">
+                <h3>Food Item 5</h3>
+                <p>200 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            
+            <div class="product" data-price="400 INR">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/033/727/990/small/the-best-food-trucks-in-the-usa-ai-generated-free-photo.jpg" alt="Food Item 6"  width="800" height="600">
+                <h3>Food Item 6</h3>
+                <p>400 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+          
+            <div class="product" data-price="400 INR">
+                <img src="https://static.vecteezy.com/system/resources/previews/033/734/715/non_2x/spaghetti-with-tomato-sauce-and-mushrooms-on-a-plate-ai-generated-free-photo.jpg" alt="Food Item 7"  width="800" height="600">
+                <h3>Food Item 7</h3>
+                <p>500 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product" data-price="400 INR">
+                <img src="https://i.ndtvimg.com/i/2017-08/indian-food_650x400_81501923865.jpg" alt="Food Item 8"  width="800" height="600">
+                <h3>Food Item 8</h3>
+                <p>289 INR</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+          
+        </section>
+
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total: <span id="total-amount">0</span></p>
+                <button id="checkout-button">Checkout</button>
+            </div>
+        </section>
+
+        <section class="checkout-form">
+            <h2>Delivery Address</h2>
+            <form id="address-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                <button type="submit">Place Order</button>
+            </form>
+            <div id="order-summary" style="display:none;">
+                <h3>Order Summary</h3>
+                <p>Your order has been placed successfully!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
